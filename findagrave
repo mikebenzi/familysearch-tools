@@ -1,10 +1,13 @@
 javascript:
 var urlParts = window.location.pathname.toString().split("/");
 var fg_domain = document.domain;
-var fg_path = urlParts[1];var fg_id = urlParts[2];
-if ((fg_domain.includes("findagrave.com")) && (fg_path=='memorial') && (fg_id!=null)) {}
-  else {fg_id = prompt("Enter a Find-A-Grave ID:", "")};
-if (fg_id!=null){
-  window.open("https://www.familysearch.org/search/record/results?f.collectionId=2221801&q.externalRecordId=" + escape(fg_id.replace(/[^0-9]/gi,""));
-};
+var fg_path = urlParts[1];
+var fg_id = urlParts[2];
+if ((fg_domain.includes("findagrave.com")) && (fg_path==="memorial") && (fg_id!==null))
+  {}
+  else
+  {fg_id = prompt("Enter a Find-A-Grave ID:", "");}
+if (fg_id!==null){
+  window.open("https://www.familysearch.org/search/record/results?f.collectionId=2221801&q.externalRecordId=" + escape(fg_id.replace(/[^0-9]/gi,"")));
+}
 void(0);
