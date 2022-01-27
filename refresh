@@ -1,0 +1,10 @@
+javascript:
+var urlParts = window.location.pathname.toString().split("/");
+var fs_domain = document.domain;
+var fs_path = urlParts[2];
+var fs_id = urlParts[4];
+if ((fs_domain.includes("familysearch.org")) && (fs_path=='person') && (fs_id!=null)) {}
+  else {fs_id = prompt("Enter a FamilySearch Person ID:", "")};
+fs_id = fs_id.replace(/[^a-zA-Z0-9-]/gi, "");
+if (fs_id!=null){window.location.assign("https://www.familysearch.org/tree/person/details/" + escape(fs_id));}
+void(0);
