@@ -8,6 +8,7 @@ Tools I have created for FamilySearch:
 * Refresh - Given a FamilySearch person ID, opens a person's page. If you are already on a person page it will refresh it
 * Hint Chart - Opens the person's hint chart 
 * Find-a-Grave - Given a Find-a-Grave ID, determines if record is associated with a person in FamilySearch
+* US Census Images - Opens the page for the entered Census year, allowing one to drill down to specific census image
 * Merge - a faster way to merge people in FamilySearch
 * Tree - opens a person's tree page
 * Sources - opens a person's sources page
@@ -17,11 +18,11 @@ Related tools I have created:
 * Find-a-Grave - open a person's Find-a-Grave page when given the Find-a-Grave ID
 
 Useful links
-* Search Records
-* Search People
+* [Search Records](https://www.familysearch.org/search/)
+* [Search People](https://www.familysearch.org/tree/find/name) 
 * US Census Images
-* Date Calculator
+* [Date Calculator](https://www.timeanddate.com/date/dateadd.html)
 * Wayback Machine
 
 Tools others have made for FamilySearch
-* RecordSeek - Creates a source in FamilySearch for any web page
+* [RecordSeek](https://recordseek.com/) - Creates a source in FamilySearch for any web page
