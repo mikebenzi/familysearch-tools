@@ -1,6 +1,5 @@
 javascript:
-var census_year = "";
-const census_collection_number = new Map([
+var census_collection_numbers = new Map([
   ["1850", "1401638"],
   ["1860", "1473181"],
   ["1870", "1438024"],
@@ -13,21 +12,23 @@ const census_collection_number = new Map([
   ["1940", "2000219"],
   ["1950", "4464515"]
  ]);
-census_year = prompt("Enter the Census Year:", "");
+
+var years_available = "";
+var census_year = prompt("Enter the Census Year:", "");
 census_year = census_year.replace(/[^0-9]/gi, "");
-if (census_collection_number.has(census_year)){
+
+if (census_collection_numbers.has(census_year)) {
   if (census_year=="1950") {
-    window.open("https://www.familysearch.org/search/collection/" + census_collection_number.get(census_year));
+    window.open("https://www.familysearch.org/search/collection/" + census_collection_numbers.get(census_year));
   }
   else {
-    window.open("https://www.familysearch.org/search/image/index?owc=https://www.familysearch.org/service/cds/recapi/collections/" + census_collection_number.get(census_year) + "/waypoints");
+    window.open("https://www.familysearch.org/search/image/index?owc=https://www.familysearch.org/service/cds/recapi/collections/" + census_collection_numbers.get(census_year) + "/waypoints");
   }
 }
-else{
-  let years_available = "";
-  for (let year of census_collection_number.keys()){
-    years_available += year + " ";
+else {
+  for (census_year of census_collection_numbers.keys()) {
+    years_available += census_year + " ";
   }
-  alert("The only years available are:\n" + years);
+  alert("The only years available are:\n" + years_available);
 }
 void(0);
